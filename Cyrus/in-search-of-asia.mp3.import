@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/in-search-of-asia.mp3-2c0b771875ef22a0112365a277d445ad.mp3str"
+
+[deps]
+
+source_file="res://Cyrus/in-search-of-asia.mp3"
+dest_files=[ "res://.import/in-search-of-asia.mp3-2c0b771875ef22a0112365a277d445ad.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

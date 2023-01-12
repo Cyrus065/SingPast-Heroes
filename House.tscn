@@ -1,0 +1,98 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://grid_movement/grid/tiles/grid_tileset.tres" type="TileSet" id=1]
+[ext_resource path="res://grid_movement/grid/Grid.gd" type="Script" id=2]
+[ext_resource path="res://dialogue/interface/Interface.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Cyrus/MobileControls.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Cyrus/Bag.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Cyrus/MobileControls.gd" type="Script" id=6]
+[ext_resource path="res://grid_movement/grid/lines/grid_lines_tileset.tres" type="TileSet" id=7]
+[ext_resource path="res://grid_movement/pawns/Character.tscn" type="PackedScene" id=8]
+[ext_resource path="res://combat/combatants/Player.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Transition.gd" type="Script" id=10]
+[ext_resource path="res://House.gd" type="Script" id=11]
+[ext_resource path="res://dialogue/dialogue_player/DialoguePlayer.tscn" type="PackedScene" id=12]
+[ext_resource path="res://grid_movement/pawns/Pawn.gd" type="Script" id=13]
+
+[node name="House" type="Node2D"]
+script = ExtResource( 11 )
+
+[node name="Grass" type="TileMap" parent="."]
+z_index = -1
+z_as_relative = false
+tile_set = ExtResource( 7 )
+format = 1
+tile_data = PoolIntArray( 1507332, 8, 0, 1507333, 8, 0, 1507334, 8, 0, 1507335, 8, 0, 1507336, 8, 0, 1507337, 8, 0, 1507338, 10, 0, 1507339, 10, 0, 1507340, 10, 0, 1507341, 10, 0, 1507342, 10, 0, 1507343, 10, 0, 1507344, 10, 0, 1507345, 10, 0, 1507346, 10, 0, 1507347, 10, 0, 1507348, 10, 0, 1507349, 10, 0, 1507350, 10, 0, 1572868, 8, 0, 1572869, 8, 0, 1572870, 8, 0, 1572871, 8, 0, 1572872, 8, 0, 1572873, 8, 0, 1572874, 8, 0, 1572875, 8, 0, 1572876, 8, 0, 1572877, 8, 0, 1572878, 8, 0, 1572879, 8, 0, 1572880, 8, 0, 1572881, 8, 0, 1572882, 8, 0, 1572883, 8, 0, 1572884, 8, 0, 1572885, 8, 0, 1572886, 10, 0, 1638404, 8, 0, 1638405, 8, 0, 1638406, 8, 0, 1638407, 8, 0, 1638408, 8, 0, 1638409, 8, 0, 1638410, 8, 0, 1638411, 8, 0, 1638412, 8, 0, 1638413, 8, 0, 1638414, 8, 0, 1638415, 8, 0, 1638416, 8, 0, 1638417, 8, 0, 1638418, 8, 0, 1638419, 8, 0, 1638420, 8, 0, 1638421, 8, 0, 1638422, 8, 0, 1703940, 8, 0, 1703941, 8, 0, 1703942, 8, 0, 1703943, 8, 0, 1703944, 8, 0, 1703945, 8, 0, 1703946, 8, 0, 1703947, 8, 0, 1703948, 8, 0, 1703949, 8, 0, 1703950, 8, 0, 1703951, 8, 0, 1703952, 8, 0, 1703953, 8, 0, 1703954, 8, 0, 1703955, 8, 0, 1703956, 8, 0, 1703957, 8, 0, 1703958, 8, 0, 1769476, 8, 0, 1769477, 8, 0, 1769478, 8, 0, 1769479, 8, 0, 1769480, 8, 0, 1769481, 8, 0, 1769482, 8, 0, 1769483, 8, 0, 1769484, 8, 0, 1769485, 8, 0, 1769486, 8, 0, 1769487, 8, 0, 1769488, 8, 0, 1769489, 8, 0, 1769490, 8, 0, 1769491, 8, 0, 1769492, 8, 0, 1769493, 8, 0, 1769494, 8, 0, 1835012, 8, 0, 1835013, 8, 0, 1835014, 8, 0, 1835015, 8, 0, 1835016, 8, 0, 1835017, 8, 0, 1835018, 8, 0, 1835019, 8, 0, 1835020, 8, 0, 1835021, 8, 0, 1835022, 8, 0, 1835023, 8, 0, 1835024, 8, 0, 1835025, 8, 0, 1835026, 8, 0, 1835027, 8, 0, 1835028, 8, 0, 1835029, 8, 0, 1835030, 8, 0, 1900548, 8, 0, 1900549, 8, 0, 1900550, 8, 0, 1900551, 8, 0, 1900552, 8, 0, 1900553, 8, 0, 1900554, 8, 0, 1900555, 8, 0, 1900556, 8, 0, 1900557, 8, 0, 1900558, 8, 0, 1900559, 8, 0, 1900560, 8, 0, 1900561, 8, 0, 1900562, 8, 0, 1900563, 8, 0, 1900564, 8, 0, 1900565, 8, 0, 1900566, 8, 0, 1966084, 8, 0, 1966085, 8, 0, 1966086, 8, 0, 1966087, 8, 0, 1966088, 8, 0, 1966089, 8, 0, 1966090, 8, 0, 1966091, 8, 0, 1966092, 8, 0, 1966093, 8, 0, 1966094, 8, 0, 1966095, 8, 0, 1966096, 8, 0, 1966097, 8, 0, 1966098, 8, 0, 1966099, 8, 0, 1966100, 8, 0, 1966101, 8, 0, 1966102, 8, 0, 2031620, 8, 0, 2031621, 8, 0, 2031622, 8, 0, 2031623, 8, 0, 2031624, 8, 0, 2031625, 8, 0, 2031626, 8, 0, 2031627, 8, 0, 2031628, 8, 0, 2031629, 8, 0, 2031630, 8, 0, 2031631, 8, 0, 2031632, 8, 0, 2031633, 8, 0, 2031634, 8, 0, 2031635, 8, 0, 2031636, 8, 0, 2031637, 8, 0, 2031638, 8, 0, 2097156, 8, 0, 2097157, 8, 0, 2097158, 8, 0, 2097159, 8, 0, 2097160, 8, 0, 2097161, 8, 0, 2097162, 8, 0, 2097163, 8, 0, 2097164, 8, 0, 2097165, 8, 0, 2097166, 8, 0, 2097167, 8, 0, 2097168, 8, 0, 2097169, 8, 0, 2097170, 8, 0, 2097171, 8, 0, 2097172, 8, 0, 2097173, 8, 0, 2097174, 8, 0, 2162692, 8, 0, 2162693, 8, 0, 2162694, 8, 0, 2162695, 8, 0, 2162696, 8, 0, 2162697, 8, 0, 2162698, 8, 0, 2162699, 8, 0, 2162700, 8, 0, 2162701, 8, 0, 2162702, 8, 0, 2162703, 8, 0, 2162704, 8, 0, 2162705, 8, 0, 2162706, 8, 0, 2162707, 8, 0, 2162708, 8, 0, 2162709, 8, 0, 2162710, 8, 0, 2228228, 8, 0, 2228229, 8, 0, 2228230, 8, 0, 2228231, 8, 0, 2228232, 8, 0, 2228233, 8, 0, 2228234, 8, 0, 2228235, 8, 0, 2228236, 8, 0, 2228237, 8, 0, 2228238, 8, 0, 2228239, 8, 0, 2228240, 8, 0, 2228241, 8, 0, 2228242, 8, 0, 2228243, 8, 0, 2228244, 8, 0, 2228245, 8, 0, 2228246, 8, 0, 2293764, 8, 0, 2293765, 8, 0, 2293766, 8, 0, 2293767, 8, 0, 2293768, 8, 0, 2293769, 8, 0, 2293770, 8, 0, 2293771, 8, 0, 2293772, 8, 0, 2293773, 8, 0, 2293774, 8, 0, 2293775, 8, 0, 2293776, 8, 0, 2293777, 8, 0, 2293778, 8, 0, 2293779, 8, 0, 2293780, 8, 0, 2293781, 8, 0, 2293782, 8, 0 )
+
+[node name="Grid" type="TileMap" parent="."]
+position = Vector2( 0, 1 )
+tile_set = ExtResource( 1 )
+format = 1
+tile_data = PoolIntArray( 1507332, 1, 0, 1507333, 14, 0, 1507334, 19, 0, 1507335, 19, 1, 1507336, 14, 0, 1507337, 14, 0, 1507338, 14, 0, 1507339, 14, 0, 1507340, 14, 0, 1507341, 14, 0, 1507342, 14, 0, 1507343, 14, 0, 1507344, 14, 0, 1507345, 14, 0, 1507346, 14, 0, 1507347, 14, 0, 1507348, 14, 0, 1507349, 14, 0, 1507350, 1, 0, 1572868, 1, 0, 1572869, 17, 0, 1572870, 19, 65536, 1572871, 19, 65537, 1572872, 17, 0, 1572873, 17, 0, 1572874, 17, 0, 1572875, 17, 0, 1572876, 17, 0, 1572877, 17, 0, 1572878, 17, 0, 1572879, 17, 0, 1572880, 17, 0, 1572881, 17, 0, 1572882, 17, 0, 1572883, 17, 0, 1572884, 17, 0, 1572885, 17, 0, 1572886, 1, 0, 1638404, 1, 0, 1638422, 1, 0, 1703940, 1, 0, 1703958, 1, 0, 1769476, 1, 0, 1769494, 1, 0, 1835012, 1, 0, 1835030, 1, 0, 1900548, 1, 0, 1900566, 1, 0, 1966084, 1, 0, 1966095, 18, 0, 1966096, 18, 1, 1966102, 1, 0, 2031620, 1, 0, 2031638, 1, 0, 2097156, 1, 0, 2097174, 1, 0, 2162692, 1, 0, 2162710, 1, 0, 2228228, 1, 0, 2228246, 1, 0, 2293764, 1, 0, 2293765, 1, 0, 2293766, 1, 0, 2293767, 1, 0, 2293768, 1, 0, 2293769, 1, 0, 2293771, 1, 0, 2293772, 1, 0, 2293773, 1, 0, 2293774, 1, 0, 2293775, 1, 0, 2293776, 1, 0, 2293777, 1, 0, 2293778, 1, 0, 2293779, 1, 0, 2293780, 1, 0, 2293781, 1, 0, 2293782, 1, 0 )
+script = ExtResource( 2 )
+dialogue_ui = NodePath("../CanvasLayer/DialogueUI")
+
+[node name="Transition" type="Node2D" parent="Grid"]
+position = Vector2( 670, 2263 )
+script = ExtResource( 10 )
+type = 4
+location = "exploration"
+
+[node name="Mum" parent="Grid" instance=ExtResource( 8 )]
+position = Vector2( 991, 2036 )
+script = ExtResource( 13 )
+type = 2
+
+[node name="DialoguePlayer" parent="Grid/Mum" instance=ExtResource( 12 )]
+character_name = "Mum"
+
+[node name="Dad" parent="Grid" instance=ExtResource( 8 )]
+position = Vector2( 1070, 2038 )
+script = ExtResource( 13 )
+type = 2
+
+[node name="DialoguePlayer" parent="Grid/Dad" instance=ExtResource( 12 )]
+character_name = "Dad"
+
+[node name="Brother" parent="Grid" instance=ExtResource( 8 )]
+position = Vector2( 988, 1873 )
+script = ExtResource( 13 )
+type = 2
+
+[node name="DialoguePlayer" parent="Grid/Brother" instance=ExtResource( 12 )]
+character_name = "Brother"
+
+[node name="Sister" parent="Grid" instance=ExtResource( 8 )]
+position = Vector2( 1071, 1873 )
+script = ExtResource( 13 )
+type = 2
+
+[node name="DialoguePlayer" parent="Grid/Sister" instance=ExtResource( 12 )]
+character_name = "Sister"
+
+[node name="Player" parent="Grid" instance=ExtResource( 8 )]
+position = Vector2( 671, 2176 )
+combat_actor = ExtResource( 9 )
+
+[node name="Camera2D" type="Camera2D" parent="Grid/Player"]
+current = true
+smoothing_enabled = true
+
+[node name="Book" type="Node2D" parent="Grid"]
+position = Vector2( 481, 1567 )
+script = ExtResource( 13 )
+type = 3
+
+[node name="DialoguePlayer" parent="Grid/Book" instance=ExtResource( 12 )]
+character_name = "Book"
+
+[node name="CanvasLayer" parent="." instance=ExtResource( 4 )]
+script = ExtResource( 6 )
+
+[node name="DialogueUI" parent="CanvasLayer" instance=ExtResource( 3 )]
+visible = false
+
+[node name="Bag" parent="CanvasLayer" instance=ExtResource( 5 )]
+visible = false
+
+[connection signal="go_exploration" from="Grid/Transition" to="." method="_on_Transition_go_exploration"]

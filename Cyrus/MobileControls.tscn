@@ -1,0 +1,100 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Cyrus/Arrow.png" type="Texture" id=1]
+[ext_resource path="res://Cyrus/B.png" type="Texture" id=2]
+[ext_resource path="res://Cyrus/Y.png" type="Texture" id=3]
+[ext_resource path="res://Cyrus/X.png" type="Texture" id=4]
+[ext_resource path="res://Cyrus/A.png" type="Texture" id=5]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="down" type="TouchScreenButton" parent="."]
+modulate = Color( 1, 1, 1, 0.27451 )
+position = Vector2( 279, 695 )
+scale = Vector2( 1.95833, 1.95833 )
+normal = ExtResource( 1 )
+passby_press = true
+action = "ui_down"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="left" type="TouchScreenButton" parent="."]
+modulate = Color( 1, 1, 1, 0.27451 )
+position = Vector2( 279, 602 )
+rotation = 1.5708
+scale = Vector2( 1.95833, 1.95833 )
+normal = ExtResource( 1 )
+passby_press = true
+action = "ui_left"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="up" type="TouchScreenButton" parent="."]
+modulate = Color( 1, 1, 1, 0.27451 )
+position = Vector2( 372, 604 )
+rotation = 3.14159
+scale = Vector2( 1.95833, 1.95833 )
+normal = ExtResource( 1 )
+passby_press = true
+action = "ui_up"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="right" type="TouchScreenButton" parent="."]
+modulate = Color( 1, 1, 1, 0.27451 )
+position = Vector2( 374, 695 )
+rotation = 4.71239
+scale = Vector2( 1.95833, 1.95833 )
+normal = ExtResource( 1 )
+passby_press = true
+action = "ui_right"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="A" type="TouchScreenButton" parent="."]
+modulate = Color( 1, 1, 1, 0.27451 )
+position = Vector2( 1657, 619 )
+scale = Vector2( 0.54593, 0.54593 )
+normal = ExtResource( 5 )
+passby_press = true
+action = "ui_accept"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="B" type="TouchScreenButton" parent="."]
+modulate = Color( 1, 1, 1, 0.27451 )
+position = Vector2( 1571, 699 )
+scale = Vector2( 0.54593, 0.54593 )
+normal = ExtResource( 2 )
+passby_press = true
+action = "ui_run"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="X" type="TouchScreenButton" parent="."]
+modulate = Color( 1, 1, 1, 0.27451 )
+position = Vector2( 1564, 528 )
+scale = Vector2( 0.54593, 0.54593 )
+normal = ExtResource( 4 )
+passby_press = true
+action = "ui_bag"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Y" type="TouchScreenButton" parent="."]
+modulate = Color( 1, 1, 1, 0.27451 )
+position = Vector2( 1475, 619 )
+scale = Vector2( 0.54593, 0.54593 )
+normal = ExtResource( 3 )
+passby_press = true
+action = "screenshot_key"
+__meta__ = {
+"_editor_description_": ""
+}

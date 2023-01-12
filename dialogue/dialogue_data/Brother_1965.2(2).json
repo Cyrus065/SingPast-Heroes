@@ -1,0 +1,12 @@
+{
+  "dialog_1" : {"name": "Brother", "text": "bro... I am so tired man... so done with all the packing..."},
+  "dialog_2" : {"name": "Brother", "text": "WAIT IS THAT THE ICE KACHANG? YOU ARE A SAVIOUR!"},
+  "instru_1" : {"name": "", "text": "Passed the item Ice Kachang to Brother"},
+  "dialog_3" : {"name": "Brother", "text": "Nom Nom... Nom Nom.. sedap bro ~ "},
+  "instru_2" : {"name": "", "text": "Fulfilled objective 1965.2 by Brother"},
+  "dialog_4" : {"name": "Brother", "text": "Thanks buddy, I needed that. Anyways, here is something for you."},
+  "instru_3" : {"name": "", "text": "Obtained the item Old Camera from Brother"},
+  "instru_4" : {"name": "", "text": "Claimed objective 1965.2 by Brother"},
+  "dialog_5" : {"name": "Brother", "text": "You can go try it out, take some picture. Go ask Sister, she know where to take amazing pictures"},
+  "instru_5" : {"name": "", "text": "Unlocked objective 1965.3 by Brother"},
+}

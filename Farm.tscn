@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Cyrus/Arrow.png" type="Texture" id=1]
+[ext_resource path="res://dialogue/interface/Interface.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Farm.gd" type="Script" id=3]
+
+[node name="Farm" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -37.0
+margin_top = -25.0
+margin_right = 1333.0
+margin_bottom = 768.0
+color = Color( 0.164706, 0.639216, 0.0313726, 1 )
+
+[node name="BackButton" type="TouchScreenButton" parent="."]
+position = Vector2( 138, 29 )
+rotation = 1.5708
+scale = Vector2( 2.13966, 2.13966 )
+normal = ExtResource( 1 )
+action = "ui_bag"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="DialogueUI" parent="." instance=ExtResource( 2 )]

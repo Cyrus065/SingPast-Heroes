@@ -1,0 +1,300 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Cyrus/district.jpg" type="Texture" id=1]
+[ext_resource path="res://Cyrus/Arrow.png" type="Texture" id=2]
+[ext_resource path="res://theme/fonts/montserrat_extra_bold_24.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Cyrus/4885045-200.png" type="Texture" id=4]
+[ext_resource path="res://3275919.png" type="Texture" id=5]
+[ext_resource path="res://maps-icon-16.png" type="Texture" id=6]
+[ext_resource path="res://camera-icon-21.png" type="Texture" id=7]
+[ext_resource path="res://880594.png" type="Texture" id=8]
+[ext_resource path="res://theme/fonts/montserrat_extra_bold_16.tres" type="DynamicFont" id=9]
+[ext_resource path="res://theme/theme.tres" type="Theme" id=10]
+[ext_resource path="res://heros/full_body/003.png" type="Texture" id=11]
+[ext_resource path="res://heros/type/fire_bg.png" type="Texture" id=12]
+[ext_resource path="res://heros/type/fire.png" type="Texture" id=13]
+
+[node name="Bag" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -25.0
+margin_top = -18.0
+margin_right = 1999.0
+margin_bottom = 937.0
+color = Color( 1, 1, 1, 0.658824 )
+
+[node name="CameraRect" type="TextureRect" parent="."]
+margin_left = 533.0
+margin_top = 37.0
+margin_right = 1918.0
+margin_bottom = 676.0
+expand = true
+
+[node name="MapRect" type="TextureRect" parent="."]
+margin_left = 533.0
+margin_top = 37.0
+margin_right = 1918.0
+margin_bottom = 676.0
+texture = ExtResource( 1 )
+expand = true
+
+[node name="BackButton" type="TouchScreenButton" parent="."]
+position = Vector2( 146, 32 )
+rotation = 1.5708
+scale = Vector2( 2.13966, 2.13966 )
+normal = ExtResource( 2 )
+action = "ui_bag"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Whitebackground" type="ColorRect" parent="."]
+visible = false
+margin_left = 533.0
+margin_top = 37.0
+margin_right = 1918.0
+margin_bottom = 676.0
+
+[node name="Label" type="RichTextLabel" parent="."]
+visible = false
+margin_left = 533.0
+margin_top = 125.0
+margin_right = 1918.0
+margin_bottom = 676.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = ExtResource( 3 )
+text = "Lee Kuan Yew: Invest $30 in key industries"
+fit_content_height = true
+scroll_active = false
+
+[node name="HeadingLabel" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 533.0
+margin_top = 37.0
+margin_right = 1918.0
+margin_bottom = 125.0
+custom_fonts/font = ExtResource( 9 )
+text = "Heading"
+align = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_left = 41.0
+margin_top = 170.0
+margin_right = 542.0
+margin_bottom = 358.0
+
+[node name="NameLabel" type="RichTextLabel" parent="VBoxContainer"]
+margin_right = 501.0
+margin_bottom = 51.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = ExtResource( 3 )
+text = "Name: Cyrus_builds"
+fit_content_height = true
+scroll_active = false
+
+[node name="YearLabel" type="RichTextLabel" parent="VBoxContainer"]
+margin_top = 55.0
+margin_right = 501.0
+margin_bottom = 106.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = ExtResource( 3 )
+text = "Year: 1965"
+fit_content_height = true
+scroll_active = false
+
+[node name="MoneyLabel" type="RichTextLabel" parent="VBoxContainer"]
+margin_top = 110.0
+margin_right = 501.0
+margin_bottom = 161.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = ExtResource( 3 )
+text = "Money: $30.00"
+fit_content_height = true
+scroll_active = false
+
+[node name="LocationLabel" type="RichTextLabel" parent="VBoxContainer"]
+margin_top = 165.0
+margin_right = 501.0
+margin_bottom = 216.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = ExtResource( 3 )
+text = "Location: City Hall"
+fit_content_height = true
+scroll_active = false
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_left = 569.0
+margin_top = 743.0
+margin_right = 954.0
+margin_bottom = 818.0
+rect_scale = Vector2( 2, 2 )
+
+[node name="MapButton" type="TouchScreenButton" parent="HBoxContainer"]
+position = Vector2( 169, 8 )
+scale = Vector2( 0.196875, 0.196875 )
+normal = ExtResource( 6 )
+action = "bag_map"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="ItemButton" type="TouchScreenButton" parent="HBoxContainer"]
+position = Vector2( 315, 3 )
+scale = Vector2( 0.135593, 0.135593 )
+normal = ExtResource( 5 )
+action = "bag_item"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="QuestButton" type="TouchScreenButton" parent="HBoxContainer"]
+position = Vector2( 236, -2 )
+scale = Vector2( 0.400002, 0.400001 )
+normal = ExtResource( 4 )
+action = "bag_quest"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="CameraButton" type="TouchScreenButton" parent="HBoxContainer"]
+position = Vector2( 80, -2 )
+scale = Vector2( 0.271875, 0.271874 )
+normal = ExtResource( 7 )
+action = "bag_camera"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="HeroButton" type="TouchScreenButton" parent="HBoxContainer"]
+position = Vector2( 12, 7 )
+scale = Vector2( 0.128906, 0.128906 )
+normal = ExtResource( 8 )
+action = "bag_hero"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="GridContainer" type="GridContainer" parent="."]
+margin_left = 633.0
+margin_top = 188.0
+margin_right = 2700.0
+margin_bottom = 1458.0
+rect_scale = Vector2( 0.3, 0.3 )
+theme = ExtResource( 10 )
+columns = 3
+
+[node name="Whitebackground2" type="ColorRect" parent="."]
+visible = false
+margin_left = 1388.0
+margin_top = 37.0
+margin_right = 1918.0
+margin_bottom = 875.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Panel" type="Panel" parent="."]
+visible = false
+margin_left = 1387.0
+margin_top = 38.0
+margin_right = 1915.0
+margin_bottom = 882.0
+
+[node name="CharBackground" type="TextureRect" parent="Panel"]
+visible = false
+modulate = Color( 1, 1, 1, 0.360784 )
+margin_left = 29.0
+margin_top = 25.0
+margin_right = 505.0
+margin_bottom = 640.0
+texture = ExtResource( 12 )
+expand = true
+
+[node name="UnitBody" type="TextureRect" parent="Panel"]
+visible = false
+margin_left = 94.0
+margin_top = 26.0
+margin_right = 502.0
+margin_bottom = 637.0
+texture = ExtResource( 11 )
+expand = true
+
+[node name="CharNameLabel" type="Label" parent="Panel"]
+visible = false
+margin_left = 34.0
+margin_top = 23.0
+margin_right = 964.0
+margin_bottom = 217.0
+rect_scale = Vector2( 0.5, 0.5 )
+custom_fonts/font = ExtResource( 9 )
+text = "Char Name"
+align = 1
+autowrap = true
+
+[node name="TypeIcon" type="TextureRect" parent="Panel"]
+visible = false
+margin_left = 402.0
+margin_top = 540.0
+margin_right = 496.0
+margin_bottom = 635.0
+texture = ExtResource( 13 )
+expand = true
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Panel"]
+visible = false
+margin_left = 35.0
+margin_top = 366.0
+margin_right = 455.0
+margin_bottom = 902.0
+rect_scale = Vector2( 0.5, 0.5 )
+
+[node name="Lvl" type="Label" parent="Panel/VBoxContainer2"]
+margin_right = 420.0
+margin_bottom = 86.0
+custom_fonts/font = ExtResource( 9 )
+text = "Lvl: 1/100"
+
+[node name="Exp" type="Label" parent="Panel/VBoxContainer2"]
+margin_top = 90.0
+margin_right = 420.0
+margin_bottom = 176.0
+custom_fonts/font = ExtResource( 9 )
+text = "Exp: 5/1000"
+
+[node name="HP" type="Label" parent="Panel/VBoxContainer2"]
+margin_top = 180.0
+margin_right = 420.0
+margin_bottom = 266.0
+custom_fonts/font = ExtResource( 9 )
+text = "HP: 10000"
+
+[node name="Atk" type="Label" parent="Panel/VBoxContainer2"]
+margin_top = 270.0
+margin_right = 420.0
+margin_bottom = 356.0
+custom_fonts/font = ExtResource( 9 )
+text = "Atk: 10000"
+
+[node name="Def" type="Label" parent="Panel/VBoxContainer2"]
+margin_top = 360.0
+margin_right = 420.0
+margin_bottom = 446.0
+custom_fonts/font = ExtResource( 9 )
+text = "Def: 10000"
+
+[node name="Rec" type="Label" parent="Panel/VBoxContainer2"]
+margin_top = 450.0
+margin_right = 420.0
+margin_bottom = 536.0
+custom_fonts/font = ExtResource( 9 )
+text = "Rec: 10000"
+
+[node name="Story" type="Label" parent="Panel"]
+visible = false
+margin_left = 27.0
+margin_top = 655.0
+margin_right = 1229.0
+margin_bottom = 1060.0
+rect_scale = Vector2( 0.4, 0.4 )
+custom_fonts/font = ExtResource( 9 )
+text = "Story"
+align = 1
+autowrap = true

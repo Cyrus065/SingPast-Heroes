@@ -1,0 +1,11 @@
+{
+  "dialog_1" : {"name": "Sister", "text": "You seem pretty excited. How was Orchard Theatre?"},
+  "dialog_2" : {"name": "Sister", "text": "Sounds great! I should visit there sometime soon."},
+  "instru_1" : {"name": "", "text": "Fulfilled objective 1965.3 by Sister"},
+  "dialog_3" : {"name": "Sister", "text": "Now that you have the film, you will need to go develop it. Here is $0.05 for the development"},
+  "instru_2" : {"name": "", "text": "Received $0.05 from Sister"},
+  "instru_3" : {"name": "", "text": "Claimed objective 1965.3 by Sister"},
+  "dialog_4" : {"name": "Sister", "text": "Macdonald House nearby have a lot of photography shop. Maybe you can go take a look."},
+  "instru_4" : {"name": "", "text": "Unlocked objective 1965.4 by Sister"},
+  "instru_5" : {"name": "", "text": "Assigned objective 1965.4 by Sister"},
+}

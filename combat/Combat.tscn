@@ -1,0 +1,53 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://combat/Combat.gd" type="Script" id=1]
+[ext_resource path="res://combat/TurnQueue.gd" type="Script" id=2]
+[ext_resource path="res://theme/theme.tres" type="Theme" id=3]
+[ext_resource path="res://combat/interface/UI.gd" type="Script" id=4]
+[ext_resource path="res://combat/interface/Character.tscn" type="PackedScene" id=5]
+[ext_resource path="res://combat/combatants/Combatant.tscn" type="PackedScene" id=6]
+[ext_resource path="res://combat/combatants/Opponent.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Cyrus/73084a26044941.5634ebdae4caa.png" type="Texture" id=8]
+[ext_resource path="res://OppSprite.tscn" type="PackedScene" id=9]
+[ext_resource path="res://HeroSprite.tscn" type="PackedScene" id=10]
+[ext_resource path="res://combat/interface/Info.tscn" type="PackedScene" id=14]
+
+[node name="Combat" type="Node2D"]
+script = ExtResource( 1 )
+hero_scene = ExtResource( 10 )
+opp_scene = ExtResource( 9 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = -4.0
+margin_top = -378.0
+margin_right = 1947.0
+margin_bottom = 913.0
+texture = ExtResource( 8 )
+expand = true
+
+[node name="TurnQueue" type="Node" parent="."]
+script = ExtResource( 2 )
+
+[node name="UI" type="Control" parent="."]
+margin_left = 6.0
+margin_top = 8.0
+margin_right = 1969.0
+margin_bottom = 884.0
+theme = ExtResource( 3 )
+script = ExtResource( 4 )
+info_scene = ExtResource( 14 )
+character_scene = ExtResource( 5 )
+sprite_scene = ExtResource( 6 )
+opp_scene = ExtResource( 7 )
+
+[node name="VSplitContainer" type="VSplitContainer" parent="UI"]
+margin_left = 163.0
+margin_top = 512.0
+margin_right = 8133.0
+margin_bottom = 2262.0
+rect_scale = Vector2( 0.2, 0.2 )
+
+[node name="Combatants" type="GridContainer" parent="UI/VSplitContainer"]
+margin_right = 7970.0
+margin_bottom = 1750.0
+columns = 3

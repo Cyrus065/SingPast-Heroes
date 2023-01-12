@@ -1,0 +1,6 @@
+{
+  "dialog_1" : {"name": "Uncle Lee", "text": "Young man, you are a fast learner."},
+  "dialog_2" : {"name": "Uncle Lee", "text": "Actually, maybe it is because I am a good teacher."},
+  "dialog_3" : {"name": "Uncle Lee", "text": "You have passed my self defence class."},
+  "instru_1" : {"name":"", "text":"Fulfilled objective 1965.1 by Uncle Lee"}
+}

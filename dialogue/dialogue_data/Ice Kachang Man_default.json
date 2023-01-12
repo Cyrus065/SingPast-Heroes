@@ -1,0 +1,9 @@
+{
+  "dialog_1" : {"name": "Ice Kachang Man", "text": "Ice Kachang! Ice Kachang! Come get your Ice Kachang!"},
+  "dialog_2" : {"name": "Ice Kachang Man", "text": "Would you like to buy one?"},
+  "dialog_3" : {"name": "Ice Kachang Man", "text": "Solid! One delicious Ice Kachange coming right up"},
+  "instru_1" : {"name": "", "text": "Obtained the item Ice Kachang from Ice Kachang Man"},
+  "dialog_4" : {"name": "Ice Kachang Man", "text": "That will be $0.01 please"},
+  "instru_2" : {"name": "", "text": "Gave $0.01 to Ice Kachang Man"},
+  "dialog_5" : {"name": "Ice Kachang Man", "text": "Thank you very much! Hope to see you again!"},
+}

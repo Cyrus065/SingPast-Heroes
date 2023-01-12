@@ -1,0 +1,7 @@
+{
+  "dialog_1" : {"name": "Unknown", "text": "Hello young man, My name is Lee Kuan Yew."},
+  "dialog_2" : {"name": "Lee Kuan Yew", "text": "Would you be kind enough to help me run some errand?"},
+  "dialog_3" : {"name": "Lee Kuan Yew", "text": "Great! Here is $30. Please help me invest in our key industries."},
+  "instru_1" : {"name": "","text": "Received $30.00 from Lee Kuan Yew"},
+  "instru_2" : {"name": "","text": "Assigned objective 1965.1 by Lee Kuan Yew"}
+}

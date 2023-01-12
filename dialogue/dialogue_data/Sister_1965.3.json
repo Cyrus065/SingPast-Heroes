@@ -1,0 +1,7 @@
+{
+  "dialog_1" : {"name": "Sister", "text": "Is that Brother's old camera? I used it recently. It may be old but it can still produce amazing pictures."},
+  "dialog_2" : {"name": "Sister", "text": "Do you know how to use? Just press the button Y to take picture."},
+  "dialog_3" : {"name": "Sister", "text": "Good place to take picture? Let me think..."},
+  "dialog_4" : {"name": "Sister", "text": "Have you heard Orchard Theatre is opening on 06 Jan? Maybe you can try your luck there."},
+  "instru_1" : {"name": "", "text": "Assigned objective 1965.3 by Sister"}
+}

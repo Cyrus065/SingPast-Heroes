@@ -1,0 +1,5 @@
+{
+  "dialog_1" : {"name": "Unknown", "text": "You are here to learn self defence?"},
+  "dialog_2" : {"name": "Unknown", "text": "Let me introduce myself, I'm the Uncle Lee"},
+  "dialog_3" : {"name": "Uncle Lee", "text": "Enough talking. I believe you can learn on the go. Let's fight!"},
+}

@@ -1,0 +1,90 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Game.gd" type="Script" id=1]
+[ext_resource path="res://combat/Combat.tscn" type="PackedScene" id=2]
+[ext_resource path="res://grid_movement/Exploration.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Cyrus/Main.gd" type="Script" id=4]
+[ext_resource path="res://Farm.tscn" type="PackedScene" id=5]
+[ext_resource path="res://House.tscn" type="PackedScene" id=6]
+[ext_resource path="res://demo.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Bookshelf.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Cyrus/audio_hero_Into-The-Sunset_SIPML_T-0310.mp3" type="AudioStream" id=9]
+
+[sub_resource type="Animation" id=1]
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("Transition/ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0.0703125, 0.0703125, 0.0703125, 0 ), Color( 0.0703125, 0.0703125, 0.0703125, 1 ) ]
+}
+
+[node name="Game" type="Node"]
+script = ExtResource( 1 )
+combat_screen = NodePath("Combat")
+exploration_screen = NodePath("Exploration")
+farm_screen = NodePath("Farm")
+bookshelf_screen = NodePath("Bookshelf")
+house_screen = NodePath("House")
+
+[node name="Bookshelf" parent="." instance=ExtResource( 8 )]
+visible = false
+
+[node name="Farm" parent="." instance=ExtResource( 5 )]
+visible = false
+
+[node name="Combat" parent="." instance=ExtResource( 2 )]
+visible = false
+
+[node name="Exploration" parent="." instance=ExtResource( 3 )]
+position = Vector2( 115, 2263 )
+
+[node name="House" parent="." instance=ExtResource( 6 )]
+position = Vector2( 3194, 1944 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/fade = SubResource( 1 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="Background" type="ColorRect" parent="CanvasLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -1761.0
+margin_top = -453.0
+margin_right = 5812.0
+margin_bottom = 4539.0
+mouse_filter = 1
+color = Color( 0.321569, 0.321569, 0.321569, 1 )
+
+[node name="Transition" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="Transition"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -1313.0
+margin_top = -476.0
+margin_right = 547.0
+margin_bottom = 430.0
+mouse_filter = 1
+color = Color( 0.0703125, 0.0703125, 0.0703125, 0 )
+
+[node name="Main" type="Node" parent="."]
+script = ExtResource( 4 )
+
+[node name="ScreenCamera" parent="." instance=ExtResource( 7 )]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+
+[connection signal="close_bookshelf" from="Bookshelf" to="." method="_on_Bookshelf_close_bookshelf"]
+[connection signal="close_farm" from="Farm" to="." method="_on_Farm_close_farm"]
+[connection signal="go_house" from="Exploration" to="." method="_on_Exploration_go_house"]
+[connection signal="go_exploration" from="House" to="." method="_on_House_go_exploration"]

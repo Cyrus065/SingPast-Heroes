@@ -1,0 +1,4 @@
+{
+  "dialog_1" : {"name": "Opponent", "text": "Aha! I won, maybe you can try again next time"},
+  "instru_1" : {"name": "", "text": "Gave $0.05 to Opponent"}
+}

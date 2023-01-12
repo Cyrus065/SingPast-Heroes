@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/audio_hero_Into-The-Sunset_SIPML_T-0310.mp3-5ea5a1753e485bfee45a875996c17eb0.mp3str"
+
+[deps]
+
+source_file="res://Cyrus/audio_hero_Into-The-Sunset_SIPML_T-0310.mp3"
+dest_files=[ "res://.import/audio_hero_Into-The-Sunset_SIPML_T-0310.mp3-5ea5a1753e485bfee45a875996c17eb0.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

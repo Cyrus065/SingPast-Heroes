@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scripts/screenshot.gd" type="Script" id=1]
+
+[node name="Node" type="Node"]
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.877742, 0.479134, 0, -0.479134, 0.877742, 0, 3.78425, 6.79054 )
+script = ExtResource( 1 )
+shortcut_action = "screenshot_key"

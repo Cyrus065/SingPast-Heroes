@@ -1,0 +1,9 @@
+{
+  "dialog_1" : {"name": "Mum", "text": "Uncle Lee passed you for self defence already?"},
+  "dialog_2" : {"name": "Mum", "text": "Look at my kid, that is real talent."},
+  "dialog_3" : {"name": "Mum", "text": "Here is something small to reward you"},
+  "instru_1" : {"name": "", "text": "Received $0.05 from Mum"},
+  "instru_2" : {"name": "", "text": "Claimed objective 1965.1 by Mum"},
+  "dialog_4" : {"name": "Mum", "text": "By the way, I think your brother has a favor to ask of you."},
+  "instru_3" : {"name": "", "text": "Unlocked objective 1965.2 by Mum"},
+}

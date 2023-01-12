@@ -1,0 +1,7 @@
+{
+  "dialog_1" : {"name": "Mum", "text": "Have you heard about all the recent violence?! The world is turning upside down!"},
+  "dialog_2" : {"name": "Mum", "text": "I heard a gang is going around beating people up! You should be more careful!"},
+  "dialog_3" : {"name": "Mum", "text": "I think you should go find Uncle Lee to learn some self defence."},
+  "instru_1" : {"name": "", "text": "Unlocked objective 1965.1 by Mum"},
+  "instru_2" : {"name": "", "text": "Assigned objective 1965.1 by Mum"}
+}
